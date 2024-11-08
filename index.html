@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Restaurant App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-backgroundPrimary text-primary font-montserrat">
+    <header class="p-6 bg-backgroundSecondary">
+      <nav class="flex justify-center :justify-between items-center gap-6">
+        <a href="#" class="text-4xl text-primary font-tangerine">
+          🍜 Soup Kitchen
+        </a>
+        <span class="hidden"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            class="size-8 stroke-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <div class="hidden md:block grow">
+          <form action="">
+            <input
+              type="search"
+              name="searchBar"
+              id="search-input"
+              placeholder="Search Soups"
+              class="bg-white outline-none px-3 py-1 rounded-lg w-full text-black"
+            />
+          </form>
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex justify-between items-center gap-4">
+            <a href="#">
+              <li
+                class="category hover:text-secondary ease-in-out duration-300 transition-all hover:border-b-2 border-secondary"
+                data-filter="all"
+              >
+                All Soups
+              </li>
+            </a>
+            <a href="#">
+              <li
+                class="category hover:text-secondary ease-in-out duration-300 transition-all hover:border-b-2 border-secondary"
+                data-filter="veg"
+              >
+                Veg Soups
+              </li>
+            </a>
+            <a href="#">
+              <li
+                class="category hover:text-secondary ease-in-out duration-300 transition-all hover:border-b-2 border-secondary"
+                data-filter="non veg"
+              >
+                Non-Veg Soups
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="relative h-[70vh]">
+        <div class="bg-backgroundSecondary/75 inset-0 absolute p-12 md:p-24">
+          <div class="w-full h-full flex flex-col gap-4 justify-center">
+            <h1 class="max-sm:text-center text-7xl md:text-9xl font-bold font-tangerine text-secondary">Soup Kitchen</h1>
+            <p class="max-sm:text-center text-base md:text-2xl font-medium">
+              Elegance in Every Ladle &ndash; Gourmet Soups Crafted to Warm the
+              Soul
+            </p>
+            <a
+              href="#menu"
+              class="max-sm:mx-auto text-sm md:text-base w-fit bg-transparent p-2 rounded-xl border-2 border-backgroundPrimary hover:bg-backgroundPrimary hover:text-black font-semibold ease-in-out duration-300 transition-all"
+              >See Menu</a
+            >
+          </div>
+        </div>
+        <video
+          autoplay
+          loop
+          muted
+          class="h-full w-full object-cover object-center"
+        >
+          <source src="./assets/soup.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section id="menu">
+        <!-- Menu items -->
+        <div class="container mx-auto p-6 md:p-12">
+          <div class="text-white font-semibold flex justify-center pb-6 gap-6 block md:hidden">
+            <span class="category border border-black px-2 py-1 rounded-xl bg-black" data-filter="all">ALL</span>
+            <span class="category border border-black px-2 py-1 rounded-xl bg-green-600" data-filter="veg">VEG</span>
+            <span class="category border border-black px-2 py-1 rounded-xl bg-red-600" data-filter="non veg">NON VEG</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 text-black" id="menu-items">
+            <!-- Items will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+  </body>
+</html>
