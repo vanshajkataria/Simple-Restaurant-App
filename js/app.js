@@ -5,7 +5,7 @@ const menu = [
       category: "veg",
       price: "$5",
       description: "Freshly made soup with handpicked tomatoes.",
-      img: "../assets/tomatoSoup.webp",
+      img: "/assets/tomatoSoup.webp",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const menu = [
       category: "veg",
       price: "$5",
       description: "Freshly made soup with handpicked corns.",
-      img: "../assets/cornSoup.webp",
+      img: "/assets/cornSoup.webp",
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ const menu = [
       category: "veg",
       price: "$6",
       description: "Freshly made soup with handpicked mushrooms.",
-      img: "../assets/mushroomSoup.webp",
+      img: "/assets/mushroomSoup.webp",
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ const menu = [
       category: "veg",
       price: "$10",
       description: "Freshly made soup with handpicked chilies & vinegar.",
-      img: "../assets/hotnsourSoup.webp",
+      img: "/assets/hotnsourSoup.webp",
     },
     {
       id: 5,
@@ -37,7 +37,7 @@ const menu = [
       category: "veg",
       price: "$7",
       description: "Freshly made soup with handmade noodles.",
-      img: "../assets/noodleSoup.webp",
+      img: "/assets/noodleSoup.webp",
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ const menu = [
       category: "veg",
       price: "$4",
       description: "Freshly made soup with handpicked spinach.",
-      img: "../assets/spinachSoup.webp",
+      img: "/assets/spinachSoup.webp",
     },
     {
       id: 7,
@@ -53,7 +53,7 @@ const menu = [
       category: "non veg",
       price: "$8",
       description: "Freshly made soup with chicken breasts.",
-      img: "../assets/chickenSoup.webp",
+      img: "/assets/chickenSoup.webp",
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ const menu = [
       category: "non veg",
       price: "$8",
       description: "Freshly made chicken broth soup with chicken breasts.",
-      img: "../assets/chickenClearSoup.webp",
+      img: "/assets/chickenClearSoup.webp",
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ const menu = [
       category: "non veg",
       price: "$10",
       description: "Freshly made soup with handmade noodles & chicken breasts.",
-      img: "../assets/chickenNoodleSoup.webp",
+      img: "/assets/chickenNoodleSoup.webp",
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ const menu = [
       category: "non veg",
       price: "$10",
       description: "Freshly made soup with handpicked corns & chicken breasts.",
-      img: "../assets/sweetCornChickenSoup.webp",
+      img: "/assets/sweetCornChickenSoup.webp",
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ const menu = [
       category: "non veg",
       price: "$12",
       description: "Freshly made soup with handmade cream & chicken breasts.",
-      img: "../assets/creamOfChickenSoup.webp",
+      img: "/assets/creamOfChickenSoup.webp",
     },
 ];
 
